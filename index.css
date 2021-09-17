@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .theme-background {
+    @apply 
+      bg-gradient-to-br
+      from-gray-100 via-indigo-50 to-blue-100
+      dark:from-gray-800 dark:to-gray-900
+  }
+  .standard-input {
+    @apply
+      rounded-md
+      h-10
+      text-sm
+      text-black
+      dark:text-white
+      px-5
+      box-border
+      w-full
+      bg-white
+      border
+      border-gray-200
+      focus:outline-none
+      focus:border-blue-400
+      focus:ring-4
+      focus:ring-blue-50
+      dark:bg-gray-800
+      dark:border-gray-700
+      dark:focus:border-blue-400
+      dark:focus:ring-gray-800
+      disabled:opacity-50
+    ;
+  }
+}
